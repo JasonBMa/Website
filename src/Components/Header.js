@@ -1,17 +1,20 @@
 import React from 'react'
+import background from './Graphics/headerBG.svg'
 
 const Header = () => {
   return (
-    <div className="w-full h-screen py-12 px-72 bg-slate-200 flex items-start">
-        <div className="w-2/3 text-6xl text-start">
-            <p className="font-bold">Hi, I'm Jason</p>
-            <p>Programmer</p>
-            <p className="text-4xl text-slate-500">Studying Computer Science @ UC Davis</p>
+    <div id="MainHeader" style={{backgroundImage: `url(${background})`}} className=" bg-cover w-full h- py-52 px-72 flex items-start justify-between">
+      <div className="w-1/2 text-7xl text-start">
+        <div className="flex drop-shadow font-bold">
+          <p className="drop-shadow font-bold">Hi, I'm</p>
+          <p className="rotate-12 pl-4">Jason</p>
         </div>
-        <div className="">
-            <img src="" alt="headerImg"></img>
-
-        </div>
+        <p className="blur-0">I squash bugs</p>
+        <p className="drop-shadow text-4xl text-white">
+          Studying Computer Science @ 
+          <span className="bg-gradient-to-r from-blue-600 via-yellow-500 to-yellow-400 inline-block text-transparent bg-clip-text drop-shadow">UC Davis</span>
+          </p>
+      </div>
     </div>
   )
 }

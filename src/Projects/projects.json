@@ -1,0 +1,12 @@
+{
+    "projects": [
+        {
+            "title": "Weather App",
+            "body": "Quick search of city displaying current weather and forecasted weather of the next five days of it's highs and lows. Utilized OpenWeatherAPI and GeoDB for back-end.",
+            "image": "WeatherApp.png",
+            "gitHubLink": "https://github.com/JasonBMa/weather-app",
+            "site": "https://weather-app-jbma.vercel.app/"
+        }
+
+    ]
+}
