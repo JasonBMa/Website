@@ -12,6 +12,7 @@ const ProjectsList = () => {
 					title= {project.title}
 					body= {project.body}
 					image= {project.image}
+					video= {project.video}
 					techUsed={project.techUsed}
 					collab={project.collab}
 					gitHubLink= {project.gitHubLink}

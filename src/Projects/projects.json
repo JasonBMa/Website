@@ -13,6 +13,7 @@
             "title": "Path Visualization",
             "body": "Created with pygame for visuals and user interaction, allows user to draw obstacles between start and end, graphically showcases how Breadth Depth Search to find the shortest path",
             "image": null,
+            "video": "PathVisualization_Demo.mp4",
             "techUsed": ["Python","Pygame"],
             "collab": null,
             "gitHubLink": "https://github.com/JasonBMa/PathVisualization",
