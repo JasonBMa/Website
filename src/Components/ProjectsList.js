@@ -12,6 +12,8 @@ const ProjectsList = () => {
 					title= {project.title}
 					body= {project.body}
 					image= {project.image}
+					techUsed={project.techUsed}
+					collab={project.collab}
 					gitHubLink= {project.gitHubLink}
 					site= {project.site}
 				/>
