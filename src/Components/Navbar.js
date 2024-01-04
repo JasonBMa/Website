@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="w-4/12 flex items-center justify-around">
         <a href="/" className="w-1/3 text-2xl font-medium hover:underline hover:animate-pulse">Home</a>
         <a href="/" className="w-1/3 text-2xl font-medium hover:underline hover:animate-pulse">Projects</a>
-        <a href="/" className="w-1/3 text-2xl font-medium hover:underline hover:animate-pulse">Contact Me</a>
+        <a href="/" className="w-1/3 text-2xl font-medium hover:underline hover:animate-pulse">Contact</a>
       </div>
     </div>
   )
