@@ -3,7 +3,7 @@ import React from 'react'
 const ProjectA = ({ title, body, image, gitHubLink, site, collab, techUsed, video }) => {
   return (
     // max-lg:w-3/4 w-11/12
-    <div className="h-96 border flex w-2/3"> 
+    <div className="h-96 flex w-2/3"> 
       <div className="flex flex-col text-left min-w-60 max-w-70 w-2/3 mr-5">
         <p className="text-6xl font-bold max-xl:text-4xl"> {title} </p>
         <p className="h-auto max-h-300 text-xl max-xl:text-lg"> {body} </p>
