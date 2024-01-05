@@ -8,15 +8,15 @@ const ProjectA = ({ title, body, image, gitHubLink, site, collab, techUsed, vide
         <p className="text-6xl font-bold max-xl:text-4xl"> {title} </p>
         <p className="h-auto max-h-300 text-xl max-xl:text-lg"> {body} </p>
         <p>{collab}</p>
-        {techUsed && <ul className="flex space-x-1">
+        {techUsed && <div className="grid grid-flow-col auto-cols-max">
           {techUsed.map((technology) => {
             return (
-              <div class="border w-fit p-2 text-lg text-white font-bold rounded-2xl bg-red-400">
+              <div class="text-sm lg:text-lg border w-fit p-2 text-white font-bold rounded-2xl bg-red-400">
                 {technology}
               </div>
             )
           })}
-        </ul>}
+        </div>}
         <div className="h-1/3">
           <a href={gitHubLink} rel="noreferrer" className="" target="_blank" alt="">
             <button class="border p-2 text-lg text-white font-bold rounded-2xl bg-slate-800 hover:outline-dashed hover:outline-2 outline-black">
