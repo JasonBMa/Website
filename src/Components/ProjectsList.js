@@ -4,10 +4,10 @@ import projectsJson from '../Projects/projects.json'
 const ProjectsList = () => {
 	return (
 			<div className="w-full border-t-4 border-black">
-				<div className="pb-20">
+				<div className="p-20">
 					<p className="text-8xl font-bold font-sans tracking-tighter text-green-500 drop-shadow"> Projects </p>
 				</div>
-				<div className="flex flex-col w-full items-center">
+				<div className="flex flex-col h-auto w-full items-center">
 					{projectsJson.projects.map((project) => {
 						return <ProjectA
 							title= {project.title}

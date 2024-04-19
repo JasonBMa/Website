@@ -1,35 +1,34 @@
 import React from 'react'
 
 function renderSwitch(mediaType, media, site){
+  let content;
   switch(mediaType) {
     case 'image':
-      return (
+      content = 
         <a href={site} target="_blank" rel="noreferrer">
-          <img className="min-w-40 max-h-full object-cover rounded-3xl drop-shadow-lg border hover:outline-dashed hover:outline-2" src={require(`./Graphics/${media}`)} alt="" />
+          <img className="object-contain rounded-xl drop-shadow-lg border hover:outline-dashed hover:outline-2" src={require(`./Graphics/${media}`)} alt="" />
         </a>
-      )
+        break;
     case 'video':
-      return (
+      content = 
         <a href={site} target="_blank" rel="noreferrer">
-          <video loop className="min-w-40 max-h-full object-cover rounded-3xl drop-shadow-lg border hover:outline-dashed hover:outline-2" controls autoPlay src={require(`./Graphics/${media}`)} type="video/mp4" />
+          <video loop className="object-contain rounded-xl drop-shadow-lg border hover:outline-dashed hover:outline-2" controls autoPlay src={require(`./Graphics/${media}`)} type="video/mp4" />
         </a>
-      );
+        break;
     case 'youtube':
-      return (
-        <div className="youtube-video">
-          <iframe
-            className="min-w-40 max-h-full object-cover rounded-3xl drop-shadow-lg border hover:outline-dashed hover:outline-2"
-            src={media}
-            title="YouTube video"
-            allowFullScreen
-          />
-        </div>
-      );
-
+      content = 
+        <iframe
+          className="w-full h-full rounded-xl drop-shadow-lg border hover:outline-dashed hover:outline-2"
+          src={media}
+          title="YouTube video"
+          allowFullScreen
+        />
+        break;
     default:
-      return null;
-  };
-}
+      break;
+    };
+    return(<div className="h-full w-full">{content}</div>);
+  }
 
 /**
  * Renders a project component with title, body, GitHub link, site link, collaboration information, technologies used, and media.
@@ -49,8 +48,8 @@ function renderSwitch(mediaType, media, site){
 const ProjectA = ({ title, body, gitHubLink, site, collab, techUsed, media, mediaType }) => {
   return (
     // max-lg:w-3/4 w-11/12
-    <div className="h-96 flex w-2/3"> 
-      <div className="flex flex-col text-left min-w-60 max-w-70 w-2/3 mr-5">
+    <div className="h-auto flex w-2/3 mb-4"> 
+      <div className="flex flex-col text-left max-w-70 w-2/3 mr-5">
         <p className="text-6xl font-bold max-xl:text-4xl"> {title} </p>
         <p className="h-auto max-h-300 text-xl max-xl:text-lg"> {body} </p>
         {techUsed && <div className="grid grid-flow-col auto-cols-max">
@@ -62,7 +61,7 @@ const ProjectA = ({ title, body, gitHubLink, site, collab, techUsed, media, medi
             )
           })}
         </div>}
-        <div className="h-1/3">
+        <div className="h-auto w-1/3">
           <a href={gitHubLink} rel="noreferrer" className="" target="_blank" alt="">
             <button className="border p-2 text-lg text-white font-bold rounded-2xl bg-slate-800 hover:outline-dashed hover:outline-2 outline-black">
               Github
@@ -70,7 +69,7 @@ const ProjectA = ({ title, body, gitHubLink, site, collab, techUsed, media, medi
           </a>
         </div>
       </div>
-      <div className="w-1/3">
+      <div className="h-auto w-1/3">
           {media ? renderSwitch(mediaType, media, site) : null}
       </div>
     </div>

@@ -33,8 +33,8 @@
         {
             "title": "Happy Feet",
             "body": "Submitted for HackDavis 2023 Hackathon. Designed for AggieReuse, it's a motion tracker to track foot traffic into the store. After storing and analyzing foot traffic we are able to use machine learning in order to predict when the store should be open and how many employees should be on the clock.",
-            "mediaType": "image",
-            "media": null,
+            "mediaType": "youtube",
+            "media": "https://www.youtube.com/embed/5ulnhIoJCjE",
             "techUsed": ["React","ChartJS","C++","Arduino","CSS"],
             "collab": null,
             "gitHubLink": "https://github.com/ssunsonic/Hackdavis-2023",
