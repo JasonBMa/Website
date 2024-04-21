@@ -4,8 +4,8 @@ import linkedin from "./Graphics/Socials/Black_Linkedin_icon.png"
 
 const Footer = () => {
   return (
-    <div className="flex-col justify-center items-center w-full h-24 pt-6 bg-gray-800 text-white">
-      <div className="flex justify-around">
+    <div className="flex flex-col justify-center items-center w-full h-24 pt-6 bg-gray-800 text-white">
+      <div className="flex w-20 justify-around">
         <a href="https://github.com/JasonBMa" target="_blank" rel="noreferrer">
           <img src={github} alt="github" className="w-8 h-8 invert"/>
         </a>

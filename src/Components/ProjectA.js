@@ -16,18 +16,20 @@ function renderSwitch(mediaType, media, site){
         </a>
         break;
     case 'youtube':
-      content = 
-        <iframe
-          className="w-full h-full rounded-xl drop-shadow-lg border hover:outline-dashed hover:outline-2"
-          src={media}
-          title="YouTube video"
-          allowFullScreen
-        />
+      content =
+        <div className="aspect-video">
+          <iframe
+            className="w-full h-full rounded-xl drop-shadow-lg border hover:outline-dashed hover:outline-2"
+            src={media}
+            title="YouTube video"
+            allowFullScreen
+          />
+        </div>
         break;
     default:
       break;
     };
-    return(<div className="h-full w-full">{content}</div>);
+    return(<div className="">{content}</div>);
   }
 
 /**
@@ -48,8 +50,8 @@ function renderSwitch(mediaType, media, site){
 const ProjectA = ({ title, body, gitHubLink, site, collab, techUsed, media, mediaType }) => {
   return (
     // max-lg:w-3/4 w-11/12
-    <div className="h-auto flex w-2/3 mb-4"> 
-      <div className="flex flex-col text-left max-w-70 w-2/3 mr-5">
+    <div className="h-auto w-full p-1 lg:w-2/3 lg:flex mb-4"> 
+      <div className="flex flex-col text-left w-full lg:w-2/3 mr-5">
         <p className="text-6xl font-bold max-xl:text-4xl"> {title} </p>
         <p className="h-auto max-h-300 text-xl max-xl:text-lg"> {body} </p>
         {techUsed && <div className="grid grid-flow-col auto-cols-max">
@@ -69,7 +71,7 @@ const ProjectA = ({ title, body, gitHubLink, site, collab, techUsed, media, medi
           </a>
         </div>
       </div>
-      <div className="h-auto w-1/3">
+      <div className="h-auto w-full lg:w-1/3">
           {media ? renderSwitch(mediaType, media, site) : null}
       </div>
     </div>
