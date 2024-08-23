@@ -6,7 +6,7 @@ const ProjectsList = () => {
 	return (
 			<div className="w-full">
 				<div className="p-5 sm:p-20">
-					<p className="text-4xl sm:text-8xl font-bold font-sans tracking-tighter text-green-500 drop-shadow"> Projects </p>
+					<p className="text-center text-4xl sm:text-8xl font-bold font-sans tracking-tighter text-green-500 drop-shadow"> Projects </p>
 				</div>
 				<div className="flex flex-col h-auto w-full items-center">
 					{projectsJson.projects.map(function(project,index) {
