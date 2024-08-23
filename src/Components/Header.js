@@ -17,7 +17,7 @@ const Header = () => {
           </p>
       </div>
       <div className="w-40 lg:w-64 h-auto">
-        {Me && <img className="h-auto object-contain rounded-tl-3xl rounded-br-3xl" src={Me}>
+        {Me && <img className="shadow shadow-green-700 h-auto object-contain rounded-tl-3xl rounded-br-3xl" src={Me}>
         </img>}
       </div>
     </div>
