@@ -1,6 +1,5 @@
 import React from 'react'
-import ProjectA from './ProjectA';
-import ProjectB from './ProjectB';
+import Project from './Project';
 import projectsJson from '../Projects/projects.json'
 const ProjectsList = () => {
   console.log(projectsJson.projects);
@@ -12,7 +11,7 @@ const ProjectsList = () => {
 				<div className="flex flex-col h-auto w-full items-center">
 					{projectsJson.projects.map(function(project,index) {
             if (index % 2 === 0) {
-              return <ProjectA
+              return <Project
                 title= {project.title}
                 body= {project.body}
                 mediaType= {project.mediaType}
@@ -22,9 +21,10 @@ const ProjectsList = () => {
                 gitHubLink= {project.gitHubLink}
                 live= {project.live}
                 key= {project.title}
+                reverse= {true}
               />
             } else {
-              return <ProjectB
+              return <Project
                 title= {project.title}
                 body= {project.body}
                 mediaType= {project.mediaType}
@@ -34,6 +34,7 @@ const ProjectsList = () => {
                 gitHubLink= {project.gitHubLink}
                 live= {project.live}
                 key= {project.title}
+                reverse= {false}
               />
             }
 					})}

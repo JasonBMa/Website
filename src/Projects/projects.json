@@ -1,24 +1,44 @@
 {
     "projects": [
         {
+            "title": "SpotMe",
+            "body": "Built with React.js and Bootstrap styling, Uses Spotify Developer Web API to gather information on user such as total likes on playlist, top songs, user information",
+            "mediaType": "image",
+            "media": "SpotMe.png",
+            "techUsed": ["React","TypeScript","Spotify API","Bootstrap","React-router-dom"],
+            "collab": null,
+            "gitHubLink": "https://github.com/JasonBMa/SpotMe",
+            "live": "https://spotme-jbma.netlify.app/"
+        },
+        {
+            "title": "Heart Haven",
+            "body": "Submitted for HackDavis 2024. Utilized Pytorch to analyze a Heart Disease data set in order to create model on predicting Heart Disease likelihood within the next 10 years. Presented the survey/test through a web app built with HTML, CSS, JS, and Bootstrap library.",
+            "mediaType": "youtube",
+            "media": "https://www.youtube.com/embed/mpRASY6PVuU?si=Ay48KWD7fc8cf1l4",
+            "techUsed": ["Python","Pytorch","HTML","CSS","JS","Bootstrap"],
+            "collab": null,
+            "gitHubLink": "https://github.com/saeenppatil/HeartHaven",
+            "live": "https://devpost.com/software/heart-haven"
+        },
+        {
             "title": "Zom-Punch",
             "body": "Zom-punch is a 2D, top-down beat 'em up where the player fights against a horde of zombie-toasts. In a world ravaged by the food poisoning horrors, you've discovered an unexpected truth: your greatest weapon isn't a gun, but your own raw power.",
             "mediaType": "youtube",
             "media": "https://www.youtube.com/embed/E4mrN1o4A_c",
-            "techUsed": ["Unity","C#"],
+            "techUsed": ["Unity","C#","LibreSprite","Swag"],
             "collab": null,
             "gitHubLink": "https://github.com/cabatchi/ECS179zomPunch",
-            "site": "https://github.com/cabatchi/ECS179zomPunch"
+            "live": "https://keithloww.itch.io/zom-punch"
         },
         {
             "title": "Path Visualization",
-            "body": "Created with pygame for visuals and user interaction, allows user to draw obstacles between start and end, graphically showcases how Breadth Depth Search to find the shortest path",
+            "body": "Created with pygame library for visuals and user interaction, allows user to draw obstacles between start and end, graphically showcases how Breadth Depth Search to find the shortest path",
             "mediaType": "video",
             "media": "PathVisualization_Demo.mp4",
             "techUsed": ["Python","Pygame"],
             "collab": null,
             "gitHubLink": "https://github.com/JasonBMa/PathVisualization",
-            "site": "https://keithloww.itch.io/zom-punch"
+            "live": null
         },
         {
             "title": "Weather App",
@@ -28,17 +48,17 @@
             "techUsed": ["React","OpenWeather API","GeoDB API", "Tailwind"],
             "collab": null,
             "gitHubLink": "https://github.com/JasonBMa/weather-app",
-            "site": "https://weather-app-jbma.vercel.app/"
+            "live": "https://weather-app-jbma.vercel.app/"
         },
         {
             "title": "Happy Feet",
-            "body": "Submitted for HackDavis 2023 Hackathon. Designed for AggieReuse, it's a motion tracker to track foot traffic into the store. After storing and analyzing foot traffic we are able to use machine learning in order to predict when the store should be open and how many employees should be on the clock.",
+            "body": "Submitted for HackDavis 2023. Designed for AggieReuse, it's a motion tracker to track foot traffic onto on-campus store. After storing and analyzing foot traffic we are able to use machine learning in order to predict when the store should be open and how many employees should be on the clock.",
             "mediaType": "youtube",
             "media": "https://www.youtube.com/embed/5ulnhIoJCjE",
             "techUsed": ["React","ChartJS","C++","Arduino","CSS"],
             "collab": null,
             "gitHubLink": "https://github.com/ssunsonic/Hackdavis-2023",
-            "site": "https://devpost.com/software/happy-feet"
+            "live": "https://devpost.com/software/happy-feet"
         }
 
     ]

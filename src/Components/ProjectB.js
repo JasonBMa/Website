@@ -50,8 +50,8 @@ function Media(mediaType, media, live){
 const ProjectB = ({ title, body, gitHubLink, live, collab, techUsed, media, mediaType }) => {
   return (
     // max-lg:w-3/4 w-11/12
-    <div className="h-auto w-full p-1 lg:w-2/3 lg:flex mb-4 justify-center">
-      <div className="h-auto w-full lg:w-2/3 mr-5">
+    <div className="h-auto w-full p-1 lg:w-2/3 lg:flex mb-4 justify-around items-center">
+      <div className="h-5/6 w-full lg:w-1/3">
         {media ? Media(mediaType, media, live) : null}
       </div>
       <div className="flex flex-col text-left w-full lg:w-2/4">

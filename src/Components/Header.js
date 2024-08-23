@@ -4,7 +4,7 @@ import Me from './Graphics/Images/Silly.jpg'
 
 const Header = () => {
   return (
-    <div id="MainHeader" style={{backgroundImage: `url(${background})`}} className="flex max-lg:flex-col bg-cover w-11/12 h-96 justify-center items-center shadow-lg shadow-green-400 m-auto mt-5 rounded">
+    <div id="MainHeader" style={{backgroundImage: `url(${background})`}} className="bg-center scroll-smooth flex max-lg:flex-col bg-cover w-11/12 h-96 justify-center items-center shadow-lg shadow-green-400 m-auto mt-5 rounded">
       <div className="xl:w-1/2 text-7xl max-lg:text-6xl text-start">
         <div className="flex drop-shadow font-bold">
           <p className="drop-shadow font-bold">Hi, I'm</p>
