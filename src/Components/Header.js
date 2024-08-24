@@ -12,7 +12,7 @@ const Header = () => {
         </div>
         <p className="blur-0">I squash bugs</p>
         <p className="drop-shadow text-4xl max-lg:text-xl text-white">
-          BS Computer Science @ 
+          BS in Computer Science @ 
           <span className="mr-1 bg-gradient-to-r from-blue-600 via-yellow-500 to-yellow-400 inline-block text-transparent bg-clip-text drop-shadow">UC Davis</span>
           </p>
       </div>
