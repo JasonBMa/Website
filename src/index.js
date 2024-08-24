@@ -9,6 +9,8 @@ import {
 import index from "./index.css";
 
 import Home from "./Routes/Home";
+import Designs from "./Routes/Designs";
+import Contact from "./Routes/Contact";
 
 const router = createBrowserRouter([
   {
@@ -19,12 +21,12 @@ const router = createBrowserRouter([
   {
     path: "/Designs",
     element:
-      <Home/>
+      <Designs/>
   },
   {
     path: "/Contact",
     element:
-      <Home/>
+      <Contact/>
   },
 ]);
 
