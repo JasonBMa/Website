@@ -5,7 +5,7 @@ const images = [ZBanana];
 function Art() {
   return (
     <>
-      <h1 className="underline text-3xl font-bold text-center text-green-500">Twitch Panels Showcase</h1>
+      <h1 className="underline text-3xl font-bold text-center text-green-500">Art Showcase</h1>
       <div className="flex flex-wrap pt-5 justify-around items-center pb-4">
         {images.map((image, index) => {
           return(
@@ -16,7 +16,7 @@ function Art() {
         })}
 
       </div>
-      <p className="text-center italic">Don't really draw anymore, but here's this lol</p>
+      <p className="text-center italic">Don't really draw digitally anymore, but here's this lol</p>
     </>
   );
 }
