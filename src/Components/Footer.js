@@ -14,7 +14,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="h-1/2">
-        <p>© 2023 - <a href="https://www.linkedin.com/in/jason-b-ma/" target="_blank" rel="noreferrer">Jason Ma</a></p>
+        <p>© 2024 - <a href="https://www.linkedin.com/in/jason-b-ma/" target="_blank" rel="noreferrer">Jason Ma</a></p>
 
       </div>
 
