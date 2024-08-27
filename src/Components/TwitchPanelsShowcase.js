@@ -7,7 +7,7 @@ const images = [Donate, Meapv2, Setupv2];
 function TwitchPanelsShowcase() {
   return (
     <>
-      <h1 className="underline text-3xl font-bold text-center text-green-500">Art</h1>
+      <h1 className="underline text-3xl font-bold text-center text-green-500">Twitch Panels</h1>
       <div className="flex flex-wrap pt-5 justify-around items-center pb-4">
         {images.map((image, index) => {
           return(
