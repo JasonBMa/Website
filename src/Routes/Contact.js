@@ -12,9 +12,9 @@ function Contact() {
             <img className="w-28 h-28 p-1 border-2 border-green-300 mr-4" src={Me} alt="Jason Ma"/>
             <div className="font-thin">
               <p className="text-xl">Contact:</p>
-              <p><a href="mailto:jasonbma317@gmail.com" target="_blank">jasonbma317@gmail.com</a></p>
-              <p><a href="https://www.linkedin.com/in/jason-b-ma/" target="_blank">linkedin.com/in/jason-b-ma/</a></p>
-              <p><a href="https://www.github.com/JasonBMa" target="_blank">github.com/JasonBMa</a></p>
+              <p><a href="mailto:jasonbma317@gmail.com" rel="noreferrer" target="_blank">jasonbma317@gmail.com</a></p>
+              <p><a href="https://www.linkedin.com/in/jason-b-ma/" rel="noreferrer" target="_blank">linkedin.com/in/jason-b-ma/</a></p>
+              <p><a href="https://www.github.com/JasonBMa" rel="noreferrer" target="_blank">github.com/JasonBMa</a></p>
 
             </div>
           </div>
